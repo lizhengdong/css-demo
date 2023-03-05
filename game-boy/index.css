@@ -1,0 +1,230 @@
+.container {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 50px);
+    width: 200px;
+    height: 350px;
+    border: 3px solid #787a79;
+    border-radius: 10px;
+    border-bottom-right-radius: 50px;
+}
+
+.top {
+    width: 100%;
+    height: 25px;
+    background-color: #f5f5f5;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 3px solid #787a79;
+}
+
+.top:after {
+    content: " ";
+    display: block;
+    position: relative;
+    top: 7px;
+    left: 20px;
+    width: 30px;
+    border: 5px solid #787a79;
+    border-radius: 5px;
+}
+
+.screen {
+    width: 170px;
+    height: 140px;
+    position: relative;
+    background-color: #bdbdbd;
+    top: 12px;
+    left: 12px;
+    border: 3px solid #787a79;
+    border-radius: 5px;
+}
+
+.screen .inner {
+    width: 100px;
+    height: 100px;
+    background-color: #aed483;
+    border: 3px solid #787a79;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, 0%);
+    top: 15px;
+    border-radius: 5px;
+}
+
+.screen .power {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    background-color: #f3886b;
+    border: 3px solid #787a79;
+    border-radius: 100%;
+    left: 8px;
+    top: calc(50% - 10px);
+}
+
+.screen .power::after {
+    content: " ";
+    display: block;
+    width: 20px;
+    border-bottom: 2px solid #787a79;
+    position: relative;
+    top: 13px;
+    left: -6px;
+}
+
+.controls {
+    position: relative;
+}
+
+.controls .dpad {
+    width: 70px;
+    height: 70px;
+    background-color: #e0e2e1;
+    border: 2px solid #787a79;
+    border-radius: 100%;
+    position: relative;
+    left: 10px;
+    top: 20px;
+}
+
+.controls .dpad,
+.controls .dpad *,
+.controls .dpad *::before,
+.controls .dpad *::after {
+    box-sizing: border-box;
+}
+
+.controls .dpad .plus::before,
+.controls .dpad .plus::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #bdbdbd;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+    content: "";
+    display: block;
+    height: 15px;
+    width: 50px;
+    box-shadow: 0 0 0 3px #787a79;
+}
+
+.controls .dpad .plus::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.controls .dpad .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #bdbdbd;
+    width: 30px;
+    height: 15px;
+    transform: translate(-50%, -50%);
+}
+
+.controls .dpad .middle::after {
+    content: "";
+    background-color: #f5f5f5;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #787a79;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.controls .buttons {
+    position: absolute;
+    width: 75px;
+    height: 34px;
+    background-color: #e0e2e1;
+    top: 35px;
+    right: 10px;
+    border: 2px solid #787a79;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    transform: rotate(-35deg);
+}
+
+.controls .buttons::before,
+.controls .buttons::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: #f3886b;
+    border: 2px solid #787a79;
+    border-radius: 100%;
+    margin: 3px;
+}
+
+.controls .startselect {
+
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%, 40px);
+}
+
+.controls .startselect::before,
+.controls .startselect::after {
+    content: "";
+    display: block;
+    background-color: #e0e2e1;
+    border: 2px solid #787a79;
+    border-radius: 8px;
+    width: 25px;
+    height: 8px;
+    margin: 0 4px;
+    transform: rotate(-35deg);
+}
+
+.corner {
+    position: absolute;
+    background-color: #f5f5f5;
+    width: 80px;
+    height: 50px;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 48px;
+}
+
+.speaker {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    display: flex;
+    transform: rotate(30deg);
+    transform: rotate(-35deg);
+}
+
+.speaker .set {
+    display: flex;
+}
+
+.speaker .set::before,
+.speaker .set::after {
+    content: "";
+    display: block;
+    background-color: #f5f5f5;
+    border: 2px solid #bdbdbd;
+    width: 1px;
+    height: 35px;
+    margin: 3px;
+}
+
+.mic {
+    position: absolute;
+    bottom: 8px;
+    border: 3px solid #787a79;
+    width: 20px;
+    border-radius: 3px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}

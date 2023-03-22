@@ -1,0 +1,203 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #65c6bb;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+body>div {
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 135px;
+    display: block;
+    position: absolute;
+    margin-top: -68px;
+    margin-left: -150px;
+}
+
+body>div::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #222;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+    z-index: -1;
+    border-radius: 100%;
+    opacity: 0.25;
+}
+
+#controller {
+    display: block;
+    position: absolute;
+    background-color: #ececec;
+    top: 1%;
+    left: 1%;
+    right: 1%;
+    bottom: 1%;
+    border-radius: 10px;
+    border: 3px solid #222;
+}
+
+#controller::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #333;
+    border: 3px solid #222;
+    top: 17%;
+    left: 3%;
+    right: 3%;
+    bottom: 7%;
+    border-radius: 5px;
+}
+
+.x {
+    display: block;
+    position: absolute;
+    background-color: #eee;
+    top: 53%;
+    left: 10%;
+    right: 72%;
+    bottom: 32%;
+    border-radius: 5px;
+}
+
+.x:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #222;
+    top: 10%;
+    left: 4%;
+    right: 4%;
+    bottom: 10%;
+    border-radius: 3px;
+    z-index: 999;
+}
+
+#vert {
+    transform: rotate(90deg);
+}
+
+#gris1::after,
+#gris1::before,
+#gris2::after,
+#gris2::before {
+
+    content: "";
+    background-color: #bdc3c7;
+    position: absolute;
+    left: 33%;
+    right: 40%;
+}
+
+#gris1:after {
+    border-radius: 0 0 5px 5px;
+    top: 21%;
+    bottom: 72%;
+}
+
+#gris1::before {
+    border-radius: 5px;
+    top: 32%;
+    bottom: 58%;
+}
+
+#gris2::after {
+    border-radius: 5px;
+    top: 46%;
+    bottom: 44%;
+}
+
+#gris2::before {
+    border-radius: 5px;
+    top: 85%;
+    bottom: 11%;
+}
+
+#selectstart {
+    display: block;
+    position: absolute;
+    background-color: #ececec;
+    border: 2px solid #bdc3c7;
+    top: 60%;
+    left: 33%;
+    right: 40%;
+    bottom: 19%;
+    border-radius: 5px;
+}
+
+#select,
+#start {
+    display: block;
+    position: absolute;
+    background-color: #222;
+    top: 32%;
+    bottom: 33%;
+    z-index: 8;
+    border-radius: 10px;
+}
+
+#select {
+    left: 14%;
+    right: 57%;
+}
+
+#start {
+    left: 57%;
+    right: 14%;
+}
+
+.btn {
+    display: block;
+    position: absolute;
+    background-color: #ececec;
+    border: 2px solid #bdc3c7;
+    top: 58%;
+    left: 77%;
+    right: 12%;
+    bottom: 17%;
+    border-radius: 3px;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    background-color: #d64541;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    top: 10%;
+    right: 10%;
+    left: 10%;
+    bottom: 10%;
+    border-radius: 100%;
+}
+
+#btn_b {
+    left: 64%;
+    right: 25%;
+}
+
+#btn_a {
+    left: 77%;
+    right: 12%;
+}
+
+
+

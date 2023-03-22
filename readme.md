@@ -5,3 +5,4 @@ win-xp-loading | windows xp系统开机效果
 jeep-car | 越野车样式
 game-boy | 任天堂gameboy游戏机
 coffe-cup | 会动的咖啡杯
+nintendo-nes-control | 任天堂nes手柄

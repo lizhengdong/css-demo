@@ -7,3 +7,4 @@ game-boy | 任天堂gameboy游戏机
 coffe-cup | 会动的咖啡杯
 nintendo-nes-control | 任天堂nes手柄
 cords | 三根数据线
+game-controller | 游戏手柄
